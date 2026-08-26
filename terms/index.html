@@ -3,127 +3,472 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lite PDF Terms of Service</title>
+    <meta name="description" content="Terms of Service for Lite PDF">
+    <title>Terms of Service - Lite PDF</title>
 
     <style>
-        body{
-            max-width:900px;
-            margin:auto;
-            padding:40px 20px;
-            font-family:Arial,sans-serif;
-            line-height:1.7;
-            color:#333;
+        :root {
+            color-scheme: light dark;
+            --background: #ffffff;
+            --surface: #f7f8fa;
+            --text-primary: #1f2328;
+            --text-secondary: #59636e;
+            --border: #d8dee4;
+            --link: #0969da;
         }
-        h1,h2{
-            color:#111;
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --background: #0d1117;
+                --surface: #161b22;
+                --text-primary: #e6edf3;
+                --text-secondary: #9da7b3;
+                --border: #30363d;
+                --link: #58a6ff;
+            }
         }
-        .last-updated{
-            color:#666;
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--background);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                         Roboto, Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        main {
+            width: min(900px, calc(100% - 40px));
+            margin: 0 auto;
+            padding: 56px 0 80px;
+        }
+
+        header {
+            padding-bottom: 24px;
+            margin-bottom: 36px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h1 {
+            margin: 0 0 8px;
+            font-size: clamp(2rem, 5vw, 2.8rem);
+            line-height: 1.2;
+        }
+
+        h2 {
+            margin: 40px 0 14px;
+            font-size: 1.45rem;
+            line-height: 1.35;
+        }
+
+        p {
+            margin: 12px 0;
+        }
+
+        ul {
+            margin: 12px 0;
+            padding-left: 28px;
+        }
+
+        li {
+            margin: 7px 0;
+        }
+
+        strong {
+            font-weight: 700;
+        }
+
+        a {
+            color: var(--link);
+            text-decoration: none;
+            overflow-wrap: anywhere;
+        }
+
+        a:hover,
+        a:focus {
+            text-decoration: underline;
+        }
+
+        .updated {
+            margin: 0;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .contact,
+        .policy-link {
+            margin-top: 14px;
+            padding: 16px 18px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+        }
+
+        footer {
+            margin-top: 48px;
+            padding-top: 22px;
+            color: var(--text-secondary);
+            border-top: 1px solid var(--border);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                width: min(100% - 28px, 900px);
+                padding-top: 32px;
+            }
+
+            h2 {
+                margin-top: 32px;
+            }
         }
     </style>
 </head>
 
 <body>
+<main>
+    <header>
+        <h1>Terms of Service</h1>
+        <p class="updated"><strong>Last Updated:</strong> August 26, 2026</p>
+    </header>
 
-<h1>Terms of Service</h1>
+    <p>
+        Welcome to Lite PDF. By downloading, installing, or using the App,
+        you agree to these Terms of Service. If you do not agree with these
+        Terms, please do not use the App.
+    </p>
 
-<p class="last-updated">
-    Last Updated: June 2026
-</p>
+    <section>
+        <h2>1. Use of the App</h2>
 
-<p>
-    Welcome to Lite PDF.
-    By downloading or using the App, you agree to these Terms of Service.
-    If you do not agree with these terms, please do not use the App.
-</p>
+        <p>
+            Lite PDF provides tools for opening, viewing, organizing, saving,
+            searching, and sharing PDF documents stored on or made available
+            to your device.
+        </p>
 
-<h2>Use of the App</h2>
+        <p>
+            You may use the App only in compliance with these Terms and all
+            applicable laws and regulations.
+        </p>
+    </section>
 
-<p>
-    Lite PDF provides tools for opening, viewing, organizing, and sharing PDF documents stored on your device.
-    You may use the App only in compliance with applicable laws and regulations.
-</p>
+    <section>
+        <h2>2. Ownership</h2>
 
-<h2>Ownership</h2>
+        <p>
+            The App, including its software, design, branding, and related
+            intellectual property, remains the property of Lite PDF and its
+            licensors.
+        </p>
 
-<p>
-    The App and all related intellectual property rights remain the property of Lite PDF and its licensors.
-    These Terms do not grant ownership of the App to you.
-</p>
+        <p>
+            These Terms give you a limited right to use the App. They do not
+            transfer ownership of the App or its intellectual property to you.
+        </p>
+    </section>
 
-<h2>User Content</h2>
+    <section>
+        <h2>3. User Content</h2>
 
-<p>
-    You retain ownership of all documents and files accessed through the App.
-    Lite PDF does not claim ownership of your files.
-</p>
+        <p>
+            You retain ownership of all PDF documents and other files that you
+            access through the App.
+        </p>
 
-<h2>Prohibited Uses</h2>
+        <p>
+            Lite PDF does not claim ownership of your files. You are responsible
+            for ensuring that you have the legal right to access, copy, view,
+            and share any document used with the App.
+        </p>
 
-<p>
-    You agree not to:
-</p>
+        <p>
+            PDF content is generally processed locally on your device. For
+            technical reasons, the App may create private local copies or
+            temporary cached copies of selected documents.
+        </p>
+    </section>
 
-<ul>
-    <li>Use the App for unlawful purposes;</li>
-    <li>Attempt to reverse engineer or modify the App;</li>
-    <li>Interfere with the operation of the App;</li>
-    <li>Distribute malicious content through the App.</li>
-</ul>
+    <section>
+        <h2>4. File Access and Availability</h2>
 
-<h2>Availability</h2>
+        <p>
+            The App relies on Android and third-party file providers for access
+            to documents.
+        </p>
 
-<p>
-    We may modify, suspend, or discontinue any feature of the App at any time without prior notice.
-</p>
+        <p>A document may become unavailable if:</p>
 
-<h2>No Warranty</h2>
+        <ul>
+            <li>It is moved, renamed, or deleted;</li>
+            <li>Its storage device is disconnected;</li>
+            <li>The file provider revokes access;</li>
+            <li>The operating system removes a temporary permission;</li>
+            <li>
+                The document is corrupted, encrypted, unsupported, or is not
+                a valid PDF;
+            </li>
+            <li>The App's local data or private copies are removed.</li>
+        </ul>
 
-<p>
-    The App is provided on an "AS IS" and "AS AVAILABLE" basis.
-    We make no warranties regarding reliability, availability, accuracy, or fitness for a particular purpose.
-</p>
+        <p>
+            We do not guarantee that every PDF file can be opened, displayed,
+            searched, or rendered correctly.
+        </p>
 
-<h2>Limitation of Liability</h2>
+        <p>
+            <strong>You should maintain independent backups of important
+                documents. Lite PDF is not a backup service.</strong>
+        </p>
+    </section>
 
-<p>
-    To the maximum extent permitted by law, Lite PDF shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from the use of the App.
-</p>
+    <section>
+        <h2>5. Sharing Documents</h2>
 
-<h2>Indemnification</h2>
+        <p>
+            When you choose to share a document, the App may create a temporary
+            cached copy and provide it to the application or service selected
+            through the Android sharing interface.
+        </p>
 
-<p>
-    You agree to indemnify and hold harmless Lite PDF from claims arising out of your misuse of the App or violation of these Terms.
-</p>
+        <p>You are solely responsible for:</p>
 
-<h2>Termination</h2>
+        <ul>
+            <li>Selecting the intended recipient or third-party application;</li>
+            <li>Confirming that you have permission to share the document;</li>
+            <li>
+                Understanding the privacy and security practices of the
+                receiving service.
+            </li>
+        </ul>
 
-<p>
-    We reserve the right to terminate or restrict access to the App if these Terms are violated.
-</p>
+        <p>
+            Lite PDF does not control and is not responsible for a document
+            after you share it with another application, person, or service.
+        </p>
+    </section>
 
-<h2>Changes to These Terms</h2>
+    <section>
+        <h2>6. Analytics and Third-Party Services</h2>
 
-<p>
-    We may revise these Terms from time to time.
-    Updated versions will be posted on this page.
-</p>
+        <p>
+            The App uses Google Firebase Analytics to understand feature usage
+            and improve the App.
+        </p>
 
-<h2>Governing Law</h2>
+        <p>
+            Use of Firebase Analytics is described in the Lite PDF Privacy
+            Policy. By using the App, you acknowledge that limited technical
+            and usage information may be processed as described in that Policy.
+        </p>
 
-<p>
-    These Terms shall be governed by and interpreted in accordance with the laws applicable in the jurisdiction where Lite PDF operates, without regard to conflict of law principles.
-</p>
+        <p>
+            Third-party services are governed by their own terms and privacy
+            policies.
+        </p>
+    </section>
 
-<h2>Contact</h2>
+    <section>
+        <h2>7. Privacy</h2>
 
-<p>
-    For questions regarding these Terms, contact:
-</p>
+        <p>
+            Your use of the App is also governed by the Lite PDF Privacy Policy:
+        </p>
 
-<p>
-    litepdf.feedback@outlook.com
-</p>
+        <div class="policy-link">
+            <a href="https://litepdf.github.io/privacy/"
+               target="_blank" rel="noopener noreferrer">
+                https://litepdf.github.io/privacy/
+            </a>
+        </div>
 
+        <p>
+            The Privacy Policy explains how the App handles local files,
+            analytics information, identifiers, and third-party services.
+        </p>
+    </section>
+
+    <section>
+        <h2>8. Prohibited Uses</h2>
+
+        <p>You agree not to:</p>
+
+        <ul>
+            <li>Use the App for unlawful, fraudulent, or abusive purposes;</li>
+            <li>Access, copy, or distribute documents without authorization;</li>
+            <li>
+                Use the App to distribute malicious, infringing, or illegal content;
+            </li>
+            <li>
+                Attempt to bypass security restrictions or interfere with the
+                operation of the App;
+            </li>
+            <li>
+                Reverse engineer, decompile, or modify the App except where such
+                restriction is prohibited by applicable law;
+            </li>
+            <li>
+                Use the App in a manner that harms other users, systems, or services.
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>9. Availability and Changes</h2>
+
+        <p>
+            We may add, modify, suspend, or discontinue features of the App at
+            any time.
+        </p>
+
+        <p>
+            We do not guarantee that every feature will remain available or that
+            the App will remain compatible with every device, operating-system
+            version, file provider, or PDF document.
+        </p>
+    </section>
+
+    <section>
+        <h2>10. No Warranty</h2>
+
+        <p>
+            To the maximum extent permitted by applicable law, the App is
+            provided on an <strong>"AS IS"</strong> and
+            <strong>"AS AVAILABLE"</strong> basis.
+        </p>
+
+        <p>
+            We make no express or implied warranties regarding reliability,
+            availability, compatibility, accuracy, security, merchantability,
+            non-infringement, or fitness for a particular purpose.
+        </p>
+
+        <p>
+            Nothing in these Terms excludes warranties or consumer rights that
+            cannot legally be excluded.
+        </p>
+    </section>
+
+    <section>
+        <h2>11. Limitation of Liability</h2>
+
+        <p>
+            To the maximum extent permitted by applicable law, Lite PDF and its
+            developers, affiliates, and licensors shall not be liable for
+            indirect, incidental, special, consequential, exemplary, or punitive
+            damages arising from or related to use of the App.
+        </p>
+
+        <p>This includes, without limitation:</p>
+
+        <ul>
+            <li>Loss of files or access to files;</li>
+            <li>Incorrect or incomplete display of a document;</li>
+            <li>
+                Disclosure caused by sharing a file with an unintended recipient
+                or third-party application;
+            </li>
+            <li>
+                Loss resulting from reliance on the App as a storage or backup service;
+            </li>
+            <li>Interruptions, incompatibility, or inability to use the App.</li>
+        </ul>
+
+        <p>
+            Nothing in these Terms limits liability that cannot legally be
+            limited or excluded.
+        </p>
+    </section>
+
+    <section>
+        <h2>12. Indemnification</h2>
+
+        <p>
+            To the extent permitted by applicable law, you agree to indemnify
+            and hold harmless Lite PDF and its developers from claims, damages,
+            losses, and expenses arising from:
+        </p>
+
+        <ul>
+            <li>Your unlawful or unauthorized use of the App;</li>
+            <li>Your violation of these Terms;</li>
+            <li>Your infringement of another person's rights;</li>
+            <li>
+                Documents or content that you access, distribute, or share
+                through the App.
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>13. Termination</h2>
+
+        <p>
+            We may restrict or terminate access to the App if you materially
+            violate these Terms or use the App unlawfully.
+        </p>
+
+        <p>You may stop using the App at any time by uninstalling it.</p>
+
+        <p>
+            Sections that by their nature should survive termination, including
+            ownership, warranty disclaimers, limitations of liability, and
+            indemnification, will continue to apply.
+        </p>
+    </section>
+
+    <section>
+        <h2>14. Changes to These Terms</h2>
+
+        <p>
+            We may revise these Terms to reflect changes to the App, legal
+            requirements, or third-party services.
+        </p>
+
+        <p>
+            Updated versions will be posted on this page with a revised
+            <strong>"Last Updated"</strong> date. Continued use of the App after
+            an updated version becomes effective constitutes acceptance where
+            permitted by applicable law.
+        </p>
+    </section>
+
+    <section>
+        <h2>15. Governing Law</h2>
+
+        <p>
+            These Terms are governed by the laws identified by the App provider
+            in the applicable store listing or, if no jurisdiction is identified,
+            by the laws that apply to the relationship between you and the App
+            provider.
+        </p>
+
+        <p>
+            Nothing in these Terms removes mandatory consumer protections that
+            apply in your country or region.
+        </p>
+    </section>
+
+    <section>
+        <h2>16. Contact</h2>
+
+        <p>For questions regarding these Terms, contact:</p>
+
+        <div class="contact">
+            <a href="mailto:litepdf.feedback@outlook.com">
+                litepdf.feedback@outlook.com
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 Lite PDF. All rights reserved.
+    </footer>
+</main>
 </body>
 </html>
