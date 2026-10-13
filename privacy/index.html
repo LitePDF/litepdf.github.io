@@ -133,7 +133,7 @@
 <main>
     <header>
         <h1>Privacy Policy</h1>
-        <p class="updated"><strong>Last Updated:</strong> August 26, 2026</p>
+        <p class="updated"><strong>Last Updated:</strong> October 13, 2026</p>
     </header>
 
     <p>
@@ -184,13 +184,20 @@
             The App also generates a random identifier and provides it to
             Firebase Analytics as an analytics user ID. This identifier is not
             based on your name, email address, advertising ID, or account
-            information and is not intended to identify you personally.
+            information and is not your real-world identity. It can associate usage events with the same App installation.
         </p>
 
         <p>
             The current version of Lite PDF <strong>does not access or collect
             the Android Advertising ID</strong> and does not use analytics data
             for personalized advertising.
+        </p>
+        <p>
+            Firebase Remote Config and Firebase Installations also process an
+            installation identifier, configuration requests, and technical information
+            such as App and device details and connection IP addresses to deliver
+            settings and manage feature availability. These requests can occur even
+            when optional commercial features are disabled.
         </p>
     </section>
 
@@ -210,7 +217,7 @@
 
         <p>
             The App does not include PDF file names, file contents, document
-            text, or document URIs in Firebase Analytics events.
+            text, document passwords, search queries, group names, or document URIs in Firebase Analytics events.
         </p>
 
         <p>
@@ -229,14 +236,16 @@
 
         <ul>
             <li>Recently opened file records;</li>
-            <li>Saved or bookmarked file records;</li>
+            <li>Favorites, custom group names, and file-to-group assignments;</li>
+            <li>Reading positions, page bookmarks, file references, and local document fingerprints used to restore access;</li>
             <li>File names, file sizes, and last-opened timestamps;</li>
             <li>App settings and preferences;</li>
             <li>
                 Private copies of documents for which permanent access could
                 not be retained;
             </li>
-            <li>Temporary copies created for sharing;</li>
+            <li>Temporary copies and generated PDFs for sharing, extraction, export, or printing;</li>
+            <li>Cached configuration, local feature-usage limits, and privacy choices where applicable;</li>
             <li>A randomly generated analytics identifier.</li>
         </ul>
 
@@ -247,9 +256,15 @@
 
         <p>
             You can clear recent-file history and temporary sharing cache through
-            the App. Uninstalling the App will normally remove data stored in its
+            the App, and manage favorites, groups, and bookmarks. Eligible unused
+            private copies can also be removed without deleting originals. PDF passwords
+            entered for document operations are used for that operation and are not saved
+            by Lite PDF. Uninstalling the App will normally remove data stored in its
             private application storage, subject to Android backup, restore, or
             device-transfer behavior controlled by your device or Google account.
+            Private imported PDF copies are excluded from Android cloud backup, but may
+            be included in direct device transfer. Settings and local records may be backed
+            up or restored by Android. Exported files remain in the destination you select.
         </p>
     </section>
 
@@ -275,80 +290,58 @@
     </section>
 
     <section>
-        <h2>5. Sharing Files</h2>
-
+        <h2>5. Exporting, Sharing, and Printing Files</h2>
         <p>
-            When you choose to share a PDF, Lite PDF creates a temporary copy in
-            the App's cache and opens the Android system sharing interface.
+            Document export and page extraction run locally. Output is written to
+            the destination you select; temporary output may remain in the App's cache.
+            A selected destination may be a cloud storage provider with its own practices.
         </p>
-
         <p>
-            The file is transferred only to the application or service that you
-            select. Once a file is shared with another application or service,
-            its handling is governed by that third party's privacy policy and
-            practices.
+            Sharing provides a PDF to the application you select through Android's
+            sharing interface. Printing provides a document to the print service you
+            select. Those applications or services may transmit or store the document
+            under their own privacy policies.
         </p>
-
         <p>
-            Lite PDF is not responsible for how a third-party application handles
-            a file after you choose to share it.
+            Lite PDF does not upload your PDFs to Firebase or our servers for these
+            operations and does not control a file after you provide it to another service.
         </p>
     </section>
 
     <section>
         <h2>6. Third-Party Services</h2>
-
         <p>
-            Lite PDF uses Google Firebase Analytics, a service provided by
-            Google LLC, to collect and process analytics information.
+            Lite PDF uses Google Firebase Analytics, Remote Config, and Installations
+            for the purposes described above. Google processes related information
+            under its applicable terms and privacy documentation. Firebase data is
+            encrypted in transit.
         </p>
-
         <p>
-            Google may process analytics information as our service provider in
-            accordance with its applicable terms and privacy documentation.
-            Data transmitted to Firebase Analytics is encrypted in transit.
+            The App also includes Google Mobile Ads, User Messaging Platform (UMP),
+            and Google Play Billing components for optional features described in
+            Section 13. Including a component does not mean that its feature is active.
         </p>
-
         <p>For more information, please review:</p>
-
         <ul>
-            <li>
-                <a href="https://policies.google.com/privacy"
-                   target="_blank" rel="noopener noreferrer">
-                    Google Privacy Policy
-                </a>
-            </li>
-            <li>
-                <a href="https://firebase.google.com/docs/analytics"
-                   target="_blank" rel="noopener noreferrer">
-                    Google Analytics for Firebase
-                </a>
-            </li>
-            <li>
-                <a href="https://support.google.com/analytics/answer/6004245"
-                   target="_blank" rel="noopener noreferrer">
-                    Google Analytics Data Safeguards
-                </a>
-            </li>
+            <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+            <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy and Security</a></li>
+            <li><a href="https://support.google.com/analytics/answer/6004245" target="_blank" rel="noopener noreferrer">Google Analytics Data Safeguards</a></li>
+            <li><a href="https://developers.google.com/admob/android/next-gen/privacy/play-data-disclosure" target="_blank" rel="noopener noreferrer">Google Mobile Ads Data Disclosure</a></li>
+            <li><a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener noreferrer">Google Play Terms of Service</a></li>
         </ul>
-
-        <p>
-            The current version of Lite PDF does not include an advertising SDK
-            and does not display advertising.
-        </p>
     </section>
 
     <section>
         <h2>7. How We Use Information</h2>
 
-        <p>Analytics information is used only for purposes such as:</p>
+        <p>Analytics and configuration information is used for purposes such as:</p>
 
         <ul>
             <li>Understanding how App features are used;</li>
             <li>Measuring App sessions and feature interactions;</li>
             <li>Identifying usability problems;</li>
             <li>Improving performance, reliability, and functionality;</li>
-            <li>Planning future improvements.</li>
+            <li>Delivering configuration settings and planning future improvements.</li>
         </ul>
 
         <p><strong>We do not sell your personal information.</strong></p>
@@ -370,7 +363,7 @@
 
         <p>
             Analytics information is retained according to our Firebase and
-            Google Analytics retention settings.
+            Google Analytics retention settings. Configuration and installation information is retained according to the applicable Firebase service settings and practices.
         </p>
 
         <p>
@@ -390,6 +383,12 @@
             identifier is not displayed to users, we may need additional
             information or technical cooperation to determine whether a
             particular analytics record can be located and deleted.
+        </p>
+        <p>
+            If you contact us, we receive your email address and the information
+            you choose to provide. We use it to respond to your request and retain
+            it as needed for support and applicable obligations. Please do not
+            send document passwords or sensitive files unless necessary.
         </p>
     </section>
 
@@ -454,7 +453,7 @@
         <h2>11. International Processing</h2>
 
         <p>
-            Information processed by Firebase Analytics may be handled in
+            Information processed by Google services described in this Policy may be handled in
             countries or regions other than the one in which you live. Google
             applies its own data-transfer and security measures to information
             processed through Firebase and Google Analytics.
@@ -480,17 +479,34 @@
     </section>
 
     <section>
-        <h2>13. Future Advertising</h2>
-
+        <h2>13. Optional Features and Changes in Processing</h2>
         <p>
-            The current version of Lite PDF does not display advertising and
-            does not collect the Android Advertising ID.
+            Advertising and in-app purchasing are disabled for this release.
+            Lite PDF does not serve advertisements or offer purchases while these
+            features are disabled. This is not a promise that all future releases
+            or configurations will have the same features.
         </p>
-
         <p>
-            If advertising or an advertising SDK is added in a future version,
-            we will update this Privacy Policy and the relevant App Store
-            disclosures before or when that version is released, as required.
+            If advertising is enabled, Google Mobile Ads may process IP-derived
+            approximate location, App interactions, diagnostic information, and
+            device or App identifiers for ad delivery, measurement, and fraud prevention.
+            Android Advertising ID access is disabled in the current App configuration.
+            UMP may process consent choices and technical information to manage privacy
+            notices. Where required, consent is requested before relevant processing,
+            and privacy choices are available through the App's settings.
+        </p>
+        <p>
+            If purchasing is enabled and you choose to buy, Google Play processes
+            payment under its own terms. Lite PDF receives product identifiers,
+            purchase tokens, status, and signed purchase records to verify and restore
+            entitlements. It may retain a verified receipt locally; it does not receive
+            your payment-card or bank-account details.
+        </p>
+        <p>
+            Before enabling processing that differs from the current release, we
+            will update this Policy and the relevant store disclosures and provide
+            any required notice or consent. PDF contents are not provided to these
+            services for advertising or purchase verification.
         </p>
     </section>
 
